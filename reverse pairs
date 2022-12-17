@@ -15,7 +15,7 @@ class Solution {
         mergeSort(nums, left, middle);
         mergeSort(nums,middle+1, right);
 
-        //count elements
+      
         int count = 0;
         for (int l = left, r = middle+1; l <= middle;) {
             if (r > right || (long)nums[l] <= 2*(long)nums[r]) {
@@ -27,7 +27,7 @@ class Solution {
             }
         }
         
-        //sort
+       
         Arrays.sort(nums, left, right + 1);   
     }
 }
